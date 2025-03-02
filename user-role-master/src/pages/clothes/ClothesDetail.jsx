@@ -1,4 +1,4 @@
-import {Link, useParams} from "react-router-dom";
+import {Link, useNavigate, useParams} from "react-router-dom";
 import {useEffect, useState} from "react";
 import apiClothesService from "./apiClothesService";
 
