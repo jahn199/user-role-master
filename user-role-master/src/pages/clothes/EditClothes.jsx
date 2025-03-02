@@ -40,7 +40,7 @@ const EditClothes = () => {
 
     const handleUpdate = () => {
         const updatedClothes = {
-            id: cId,
+            id: cid,
             cName,
             cCategory,
             cBrand,
@@ -53,7 +53,7 @@ const EditClothes = () => {
             cSeason,
         };
 
-        apiClothesService.updateClothes(cId, updatedClothes, () => {
+        apiClothesService.updateClothes(cid, updatedClothes, () => {
             alert("옷 정보가 수정되었습니다!");
             navigate("/clothes");
         });
